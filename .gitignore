@@ -1,52 +1,98 @@
-# === General Node.js (backend) ===
-node_modules/
-logs
-*.log
-npm-debug.log*
-pids
-*.pid
-*.seed
-*.pid.lock
-.npm
-.eslintcache
-.node_repl_history
-.env
-
-# === React Native (MobileApp) ===
-MobileApp/node_modules/
-MobileApp/android/.gradle/
-MobileApp/android/app/build/
-MobileApp/ios/Pods/
-MobileApp/ios/build/
-MobileApp/ios/*.xcworkspace
-MobileApp/ios/DerivedData/
-MobileApp/ios/.DS_Store
-MobileApp/.expo/
-MobileApp/.expo-shared/
-MobileApp/.idea/
-MobileApp/.vscode/
-MobileApp/.DS_Store
-MobileApp/*.log
-MobileApp/*.env
-MobileApp/coverage/
-MobileApp/web-build/
-
-# Watchman files
-MobileApp/.watchmanconfig
-
-# Metro bundler cache
-MobileApp/.metro-cache/
-
-# Expo CLI state
-MobileApp/.expo/
-
-# Fastlane
-MobileApp/ios/fastlane/report.xml
-MobileApp/android/fastlane/report.xml
-
-# Misc
+# === General ===
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
 *.tmp
-.DS_Store
-Thumbs.db
+.vscode/
+.idea/
+*.log
+*.pid
+*.pid.lock
+*.seed
+
+# === Node.js (backend & general) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids/
+logs/
+*.log
+.npm/
+.eslintcache
+.node_repl_history
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+dist/
+build/
+coverage/
+
+# === Python (AiBackend) ===
+AiBackend/__pycache__/
+AiBackend/*.py[cod]
+AiBackend/*$py.class
+AiBackend/venv/
+AiBackend/.venv/
+AiBackend/env/
+AiBackend/.env
+AiBackend/build/
+AiBackend/develop-eggs/
+AiBackend/dist/
+AiBackend/downloads/
+AiBackend/eggs/
+AiBackend/.eggs/
+AiBackend/lib/
+AiBackend/lib64/
+AiBackend/parts/
+AiBackend/sdist/
+AiBackend/var/
+AiBackend/wheels/
+AiBackend/*.egg-info/
+AiBackend/.installed.cfg
+AiBackend/*.egg
+AiBackend/MANIFEST
+AiBackend/.pytest_cache/
+AiBackend/.mypy_cache/
+
+# === React Native (MobileApp) ===
+MobileApp/node_modules/
+MobileApp/.expo/
+MobileApp/.expo-shared/
+MobileApp/web-build/
+MobileApp/.watchmanconfig
+MobileApp/*.log
+MobileApp/*.env
+MobileApp/coverage/
+
+# Android
+MobileApp/android/*.iml
+MobileApp/android/.gradle/
+MobileApp/android/local.properties
+MobileApp/android/project.properties
+MobileApp/android/platform/
+MobileApp/android/app/build/
+MobileApp/android/app/intermediates/
+MobileApp/android/app/generated/
+MobileApp/android/captures/
+MobileApp/android/gradlew
+MobileApp/android/gradlew.bat
+
+# iOS
+MobileApp/ios/Pods/
+MobileApp/ios/build/
+MobileApp/ios/*.xcworkspace
+MobileApp/ios/*.lprof
+MobileApp/ios/DerivedData/
+MobileApp/ios/fastlane/report.xml
+MobileApp/ios/generated/
+
+# Bundle artifacts
+*.jsbundle
+
+# === Backend Specific ===
+backend/.env
+backend/dist/
