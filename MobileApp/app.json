@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "AgriX",
+    "slug": "agrix",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icons/crop.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icons/crop.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "web": {
+      "favicon": "./assets/icons/crop.png"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/crop.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    }
+  }
+}
